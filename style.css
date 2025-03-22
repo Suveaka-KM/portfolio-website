@@ -79,3 +79,7 @@ button:hover {
 .content p {
     text-align: justify;
 }
+p {
+    color: black;
+}
+
