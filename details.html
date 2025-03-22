@@ -7,13 +7,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Details Section -->
     <div class="details-container">
         <h1>What I'm Currently Doing</h1>
         <p>Currently pursuing B.Tech in Information Technology, specializing in software development with a keen interest in problem-solving and teamwork.</p>
         
         <h2>Contact Information</h2>
         <ul>
-            <li><strong>Email:</strong> suveaka.mahalingam@gmail.com</li>
+            <li><strong>Email:</strong> <a href="mailto:suveaka.mahalingam@gmail.com">suveaka.mahalingam@gmail.com</a></li>
             <li><a href="https://github.com/Suveaka-KM" target="_blank">GitHub</a></li>
             <li><a href="https://www.linkedin.com/in/suveaka-k-m" target="_blank">LinkedIn</a></li>
         </ul>
@@ -21,6 +34,7 @@
         <button onclick="viewResume()">View Resume</button>
     </div>
 
+    <!-- JavaScript for Resume -->
     <script>
         function viewResume() {
             window.open("resume.pdf", "_blank");
