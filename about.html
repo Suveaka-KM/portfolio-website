@@ -30,6 +30,11 @@
             text-decoration: none;
             font-size: 18px;
         }
+        .active {
+            font-weight: bold;
+            color: #4CAF50; 
+            text-decoration: underline;
+        }
         .container {
             width: 80%;
             margin: auto;
@@ -38,9 +43,11 @@
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
             margin-top: 30px;
+            text-align: left; /* Align text to left inside the container */
         }
-        h1,h2 {
+        h1, h2 {
             color: #333;
+            text-align: center; /* Center headings */
         }
         p {
             font-size: 18px;
@@ -52,13 +59,26 @@
             width: 200px;
             height: 200px;
             border-radius: 50%;
-            margin: 20px 0;
+            display: block;
+            margin: 20px auto; /* Center image */
         }
-        .active {
-        font-weight: bold;
-        color: #4CAF50; 
-        text-decoration: underline;
-    }
+        ul {
+            list-style-type: disc; /* Bullet points */
+            padding-left: 20px;
+        }
+        li {
+            font-size: 18px;
+            margin-bottom: 5px;
+            color: #444;
+        }
+        .fun-fact {
+            background-color: #fff;
+            padding: 10px;
+            margin: 20px auto;
+            width: 80%;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
@@ -67,7 +87,7 @@
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-             <li><a href="about.html" class="active">About Me</a></li>
+            <li><a href="about.html" class="active">About Me</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="skills.html">Skills</a></li>
             <li><a href="experience.html">Experience</a></li>
@@ -79,30 +99,36 @@
     <div class="container">
         <h1>About Me</h1>
         <img src="img.jpg" alt="Suveaka K M" class="profile-img">
-        <h2>Career goal</h2> 
-        <p>"Code. Innovate. Impact. My journey to building future-ready solutions."</p>
+
+        <h2>Career Goal</h2> 
+        <p><em>"Code. Innovate. Impact. My journey to building future-ready solutions."</em></p>
         <p>
             Hi! I'm <strong>Suveaka K M</strong>, a passionate and detail-oriented software developer currently pursuing B.Tech in Information Technology. 
             I have a strong foundation in programming languages like <strong>C, C++, Java Basics, SQL, and HTML</strong>. I thrive on solving real-world problems through technology and 
             love crafting efficient, scalable, and user-friendly solutions. My expertise includes problem-solving, teamwork, and strong communication skills.
         </p>
-        <p>
-           <h2>Hobbies & Interests</h2>
-    <ul>
-        <li>State-level throwball player 🏐</li>
-        <li>Love traveling and exploring new places ✈️</li>
-        <li>Enjoy listening to A. R. Rahman’s music 🎵</li>
-        <li>Passionate about solving real-world tech problems 💻</li>
-    </ul>
+
+        <h2>Hobbies & Interests</h2>
+        <ul>
+            <li>🏐 State-level throwball player</li>
+            <li>✈️ Love traveling and exploring new places</li>
+            <li>🎵 Enjoy listening to A. R. Rahman’s music</li>
+            <li>💻 Passionate about solving real-world tech problems</li>
+        </ul>
+
         <h2>Skills</h2>
-    <ul>
-        <li><strong>C, C++:</strong> ⭐⭐⭐⭐⭐</li>
-        <li><strong>Java Basics:</strong> ⭐⭐⭐⭐</li>
-        <li><strong>SQL, HTML:</strong> ⭐⭐⭐⭐</li>
-    </ul>
+        <ul>
+            <li><strong>C, C++:</strong> ⭐⭐⭐⭐⭐</li>
+            <li><strong>Java Basics:</strong> ⭐⭐⭐⭐</li>
+            <li><strong>SQL, HTML:</strong> ⭐⭐⭐⭐</li>
+        </ul>
     </div>
-    <h2>Fun Fact</h2>
-    <p>"Team player both in throwball and in tech—always ready to win!"🧩</p>
+
+    <!-- Fun Fact Section -->
+    <div class="fun-fact">
+        <h2>Fun Fact</h2>
+        <p><em>"Team player both in throwball and in tech—always ready to win!" 🧩</em></p>
+    </div>
 
 </body>
 </html>
