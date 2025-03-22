@@ -25,7 +25,17 @@ body {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
+    text-align: left; /* Align text to the left by default */
+}
+
+/* Justify text alignment for better readability */
+.justify-text {
+    text-align: justify;
+}
+
+/* Left align Interests & Skills section */
+.left-align {
+    text-align: left;
 }
 
 /* Navigation Bar */
@@ -63,6 +73,7 @@ h1, h2 {
     text-align: center;
 }
 
+/* Bullet Points Styling */
 ul {
     padding-left: 20px;
 }
