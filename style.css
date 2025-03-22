@@ -1,25 +1,23 @@
-/* General Styles */
+/* General Page Styles */
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
     background-color: white;
     color: black;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* Navigation Bar */
+/* Navbar */
 nav {
     background-color: #111;
     padding: 15px 0;
-    text-align: center;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    list-style-type: none;
     display: flex;
     justify-content: center;
+    padding: 0;
 }
 
 nav ul li {
@@ -29,7 +27,6 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 16px;
 }
 
 /* Homepage Layout */
@@ -90,9 +87,9 @@ button:hover {
 .profile-image img {
     width: 80%;
     height: auto;
-    border-radius: 10px;
-    object-fit: cover;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px; /* Slightly rounded corners */
+    object-fit: cover; /* Ensures full coverage */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a slight shadow */
 }
 
 /* Mobile Responsive */
