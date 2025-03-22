@@ -78,6 +78,9 @@ button:hover {
 }
 .content p {
     text-align: justify;
+    max-width: 600px;
+    margin: auto;
+    color: black;
 }
 p {
     color: black;
