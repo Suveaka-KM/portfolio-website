@@ -3,27 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suveaka K M - Details</title>
+    <title>Suveaka K M - Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="details-container">
-        <h1>What I'm Currently Doing</h1>
-        <p>Currently pursuing B.Tech in Information Technology, specializing in software development with a keen interest in problem-solving and teamwork.</p>
-        
-        <h2>Contact Information</h2>
-        <ul>
-            <li><strong>Email:</strong> suveaka.mahalingam@gmail.com</li>
-            <li><a href="https://github.com/Suveaka-KM" target="_blank">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/suveaka-k-m" target="_blank">LinkedIn</a></li>
-        </ul>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <button onclick="viewResume()">View Resume</button>
-    </div>
+    <section class="home">
+        <div class="container">
+            <div class="content">
+                <h1>SUVEAKA K M</h1>
+                <h3>SOFTWARE DEVELOPER</h3>
+                <p>A passionate and detail-oriented Software Developer with a strong foundation in C, C++, Java Basics, SQL, and HTML. I thrive on solving real-world problems through technology and love crafting efficient, scalable, and user-friendly solutions.</p>
+                <button onclick="navigateToDetails()">Let's get started →</button>
+            </div>
+            <div class="profile-image">
+                <img src="profile.jpg" alt="Suveaka K M">
+            </div>
+        </div>
+    </section>
 
     <script>
-        function viewResume() {
-            window.open("resume.pdf", "_blank");
+        function navigateToDetails() {
+            window.location.href = "details.html";
         }
     </script>
 </body>
