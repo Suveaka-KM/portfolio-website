@@ -1,33 +1,26 @@
-/* General Styles */
-body {
+/* Reset Default Styles */
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: white;
-    color: black;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 /* Navigation Bar */
 nav {
     background-color: black;
-    padding: 15px 0;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+    padding: 15px;
+    text-align: right;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
+    margin-right: 50px;
 }
 
 nav ul li {
-    margin: 0 15px;
+    display: inline;
+    margin-left: 20px;
 }
 
 nav ul li a {
@@ -36,63 +29,78 @@ nav ul li a {
     font-size: 16px;
 }
 
-/* Hero Section */
-.hero {
+/* Main Section */
+.container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    min-height: 100vh;
-    padding: 80px 10%;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: 50px auto;
 }
 
-/* Left Content */
-.hero-content {
-    max-width: 600px;
+/* Left Text Section */
+.text-section {
+    width: 50%;
 }
 
-.hero-content h1 {
+.text-section h1 {
     font-size: 40px;
     font-weight: bold;
 }
 
-.hero-content h3 {
-    font-size: 16px;
+.text-section h3 {
+    font-size: 18px;
     font-weight: bold;
+    margin-top: 10px;
 }
 
-.hero-content p {
+.text-section p {
     font-size: 16px;
+    margin-top: 15px;
     line-height: 1.5;
-    max-width: 500px;
 }
 
 /* Green Button */
-.btn {
-    display: inline-block;
-    background-color: green;
+button {
+    background-color: #008000;
     color: white;
     padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
     font-size: 16px;
-    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
 }
 
-/* Right Image */
-.hero-image img {
-    max-width: 350px;
+button:hover {
+    background-color: #006400;
+}
+
+/* Right Image Section */
+.image-section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.image-section img {
+    width: 80%;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .hero {
+    .container {
         flex-direction: column;
         text-align: center;
     }
 
-    .hero-content, .hero-image {
-        margin-bottom: 20px;
+    .text-section, .image-section {
+        width: 100%;
+    }
+
+    .image-section img {
+        width: 90%;
     }
 }
