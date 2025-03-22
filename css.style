@@ -55,14 +55,14 @@ body {
 .links a {
     display: inline-block;
     margin-top: 10px;
-    color: blue;
-    text-decoration: none;
-    font-weight: bold;
+    color: blue !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
     transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth effect */
 }
 
 .links a:hover {
-    color: darkblue;
-    text-decoration: underline; /* Underline effect */
-    transform: scale(1.05); /* Slight zoom effect */
+    color: darkblue !important;
+    text-decoration: underline !important; /* Underline effect */
+    transform: scale(1.05) !important; /* Slight zoom effect */
 }
