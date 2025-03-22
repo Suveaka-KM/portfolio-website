@@ -1,23 +1,29 @@
-/* General Page Styles */
+/* General Styles */
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
     background-color: white;
     color: black;
-    font-family: 'Poppins', sans-serif;
 }
 
-/* Navbar */
+/* Navigation Bar */
 nav {
-    background-color: #111;
+    background-color: black;
     padding: 15px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
-    padding: 0;
 }
 
 nav ul li {
@@ -27,88 +33,66 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 16px;
 }
 
-/* Homepage Layout */
-.container {
+/* Hero Section */
+.hero {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 50px 100px;
-    height: 90vh;
+    align-items: center;
+    min-height: 100vh;
+    padding: 80px 10%;
 }
 
-/* Left Side - Text */
-.content {
-    max-width: 50%;
-    text-align: left;
-}
-
-.content h1 {
-    font-size: 2.8rem;
-    font-weight: bold;
-}
-
-.content h3 {
-    font-size: 1.3rem;
-    color: gray;
-}
-
-.content p {
-    font-size: 1.1rem;
-    text-align: justify;
+/* Left Content */
+.hero-content {
     max-width: 600px;
 }
 
-/* Button Styling */
-button {
+.hero-content h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.hero-content h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 500px;
+}
+
+/* Green Button */
+.btn {
+    display: inline-block;
     background-color: green;
     color: white;
-    padding: 15px 25px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 20px;
+    padding: 10px 20px;
     border-radius: 5px;
-    transition: 0.3s;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 15px;
 }
 
-button:hover {
-    background-color: limegreen;
+/* Right Image */
+.hero-image img {
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Right Side - Image */
-.profile-image {
-    width: 50%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.profile-image img {
-    width: 80%;
-    height: auto;
-    border-radius: 10px; /* Slightly rounded corners */
-    object-fit: cover; /* Ensures full coverage */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a slight shadow */
-}
-
-/* Mobile Responsive */
+/* Responsive Design */
 @media (max-width: 768px) {
-    .container {
+    .hero {
         flex-direction: column;
         text-align: center;
     }
 
-    .content {
-        max-width: 90%;
-        padding-bottom: 30px;
-    }
-
-    .profile-image {
-        justify-content: center;
-    }
-
-    .profile-image img {
-        width: 100%;
+    .hero-content, .hero-image {
+        margin-bottom: 20px;
     }
 }
