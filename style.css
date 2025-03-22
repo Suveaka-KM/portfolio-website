@@ -30,8 +30,9 @@ nav ul li a {
 .container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between; /* Space between text and image */
     padding: 100px 50px;
+    flex-direction: row-reverse; /* Moves image to the right */
 }
 
 .content {
@@ -60,6 +61,14 @@ button:hover {
     border-radius: 50%;
 }
 
+.profile-image img {
+    width: 300px;
+    border-radius: 50%;
+    display: block;
+}
+.profile-image {
+    flex-shrink: 0; /* Prevents image from shrinking */
+}
 /* Details Page */
 .details-container {
     padding: 50px;
