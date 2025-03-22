@@ -1,117 +1,97 @@
-/* General Styles */
-body {
+/* Reset Styles */
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: white;
-    color: black;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 /* Navigation Bar */
 nav {
-    background-color: #111;
-    padding: 15px 0;
+    background-color: black;
+    padding: 15px;
     text-align: center;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     justify-content: center;
+    gap: 20px;
 }
 
 nav ul li {
-    margin: 0 15px;
+    display: inline;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 16px;
+    font-weight: bold;
 }
 
-/* Homepage Layout */
-.container {
+/* Hero Section */
+.hero {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 50px 100px;
-    height: 90vh;
+    align-items: center;
+    padding: 50px 10%;
+    background-color: white;
 }
 
-/* Left Side - Text */
+/* Left Content */
 .content {
     max-width: 50%;
-    text-align: left;
 }
 
 .content h1 {
-    font-size: 2.8rem;
+    font-size: 48px;
     font-weight: bold;
 }
 
 .content h3 {
-    font-size: 1.3rem;
-    color: gray;
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
 }
 
 .content p {
-    font-size: 1.1rem;
-    text-align: justify;
-    max-width: 600px;
+    font-size: 16px;
+    margin-top: 15px;
+    line-height: 1.6;
+    max-width: 500px;
 }
 
-/* Button Styling */
-button {
+/* Button */
+.btn {
+    display: inline-block;
     background-color: green;
     color: white;
-    padding: 15px 25px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
+    padding: 10px 20px;
     margin-top: 20px;
+    text-decoration: none;
+    font-size: 16px;
     border-radius: 5px;
-    transition: 0.3s;
 }
 
-button:hover {
-    background-color: limegreen;
-}
-
-/* Right Side - Image */
-.profile-image {
-    width: 50%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.profile-image img {
-    width: 80%;
+/* Right-side Profile Image */
+.image img {
+    width: 350px;  /* Adjust width as needed */
     height: auto;
-    border-radius: 10px;
-    object-fit: cover;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Mobile Responsive */
+/* Responsive Design */
 @media (max-width: 768px) {
-    .container {
+    .hero {
         flex-direction: column;
         text-align: center;
     }
-
-    .content {
-        max-width: 90%;
-        padding-bottom: 30px;
+    .content, .image {
+        max-width: 100%;
     }
-
-    .profile-image {
-        justify-content: center;
-    }
-
-    .profile-image img {
-        width: 100%;
+    .image img {
+        width: 80%;
     }
 }
