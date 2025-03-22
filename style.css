@@ -1,19 +1,23 @@
-/* General Styles */
+/* General Page Styles */
 body {
     margin: 0;
     padding: 0;
     background-color: white;
     color: black;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Navbar */
+nav {
+    background-color: #111;
+    padding: 15px 0;
+}
+
 nav ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
-    background-color: #111;
-    padding: 15px;
+    padding: 0;
 }
 
 nav ul li {
@@ -25,7 +29,7 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* Main Section - Flexbox for Alignment */
+/* Homepage Layout */
 .container {
     display: flex;
     align-items: center;
@@ -34,15 +38,20 @@ nav ul li a {
     height: 90vh;
 }
 
-/* Text Content */
+/* Left Side - Text */
 .content {
     max-width: 50%;
     text-align: left;
-    padding-right: 50px;
 }
 
 .content h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.content h3 {
+    font-size: 1.3rem;
+    color: gray;
 }
 
 .content p {
@@ -68,13 +77,11 @@ button:hover {
     background-color: limegreen;
 }
 
-/* Image Styling - Make it Rectangular & Right Aligned */
+/* Right Side - Image */
 .profile-image {
     width: 50%;
-    height: 100vh;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
 }
 
 .profile-image img {
@@ -83,4 +90,25 @@ button:hover {
     border-radius: 10px; /* Slightly rounded corners */
     object-fit: cover; /* Ensures full coverage */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a slight shadow */
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content {
+        max-width: 90%;
+        padding-bottom: 30px;
+    }
+
+    .profile-image {
+        justify-content: center;
+    }
+
+    .profile-image img {
+        width: 100%;
+    }
 }
