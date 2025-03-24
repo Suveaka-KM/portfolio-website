@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me - Suveaka K M</title>
+    <title>Contact - Suveaka K M</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -30,71 +30,42 @@
             text-decoration: none;
             font-size: 18px;
         }
-        .active {
-            font-weight: bold;
-            color: #4CAF50; 
-            text-decoration: underline;
-        }
         .container {
-            width: 50%;
+            width: 60%;
             margin: auto;
             padding: 20px;
             background-color: white;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
             margin-top: 30px;
-            text-align: left;
         }
         h1 {
             color: #333;
-            text-align: center;
         }
-        label {
+        p {
+            font-size: 18px;
+            color: #555;
+        }
+        .contact-info {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        .contact-info a {
+            text-decoration: none;
+            color: #4CAF50;
             font-weight: bold;
-            color: #333;
-            display: block;
-            margin-top: 10px;
-        }
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-        textarea {
-            height: 120px;
-            resize: none;
         }
         button {
-            width: 100%;
             background-color: #4CAF50;
             color: white;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
+            padding: 10px 20px;
             font-size: 18px;
+            border: none;
             cursor: pointer;
-            margin-top: 15px;
+            border-radius: 5px;
         }
         button:hover {
             background-color: #45a049;
-        }
-        .contact-info {
-            text-align: center;
-            margin-top: 20px;
-            font-size: 18px;
-        }
-        .contact-info a {
-            color: #4CAF50;
-            text-decoration: none;
-            font-weight: bold;
-            margin: 0 10px;
-            display: inline-block;
-        }
-        .contact-info a:hover {
-            color: #2E8B57;
         }
     </style>
 </head>
@@ -112,28 +83,21 @@
         </ul>
     </nav>
 
-    <!-- Contact Form -->
+    <!-- Contact Section -->
     <div class="container">
         <h1>Contact Me</h1>
-        <form>
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <p>Feel free to reach out to me through the details below!</p>
 
-            <label for="email">Your Email</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <div class="contact-info">
+            <p><strong>Email:</strong> <a href="mailto:suveaka.mahalingam@gmail.com">suveaka.mahalingam@gmail.com</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/suveaka-k-m" target="_blank">Suveaka K M</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/Suveaka-KM" target="_blank">Suveaka-KM</a> 🐙</p>
+        </div>
 
-            <label for="message">Your Message</label>
-            <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
-
-            <button type="submit">Send Message</button>
-        </form>
-    </div>
-
-    <!-- Contact Info -->
-    <div class="contact-info">
-        <p>📧 Email: <a href="mailto:suveaka@example.com">suveaka@example.com</a></p>
-        <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/suveaka-km" target="_blank">linkedin.com/in/suveaka-km</a></p>
-        <p>🐙 GitHub: <a href="https://github.com/suveaka" target="_blank">github.com/suveaka</a></p>
+        <h2>Send a Message</h2>
+        <a href="https://forms.gle/bK3zrXb5QWyBex766" target="_blank">
+            <button>Send Message</button>
+        </a>
     </div>
 
 </body>
