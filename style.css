@@ -8,22 +8,25 @@
 body {
     background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #ffdde1, #fbc2eb);
     background-size: 400% 400%;
-    animation: gradientAnimation 15s ease infinite;
-    font-family: Arial, sans-serif;
+    animation: gradientAnimation 10s ease infinite;
+    font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
+    color: #333;
 }
 
-/* Sticky Navigation Bar */
+/* Glassmorphism Sticky Navigation Bar */
 nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
     padding: 15px 0;
     text-align: center;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease-in-out;
 }
 
 nav ul {
@@ -41,7 +44,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #fff;
     font-weight: bold;
     font-size: 18px;
     transition: color 0.3s ease;
@@ -49,7 +52,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ff6b81;
+    color: #ff4757;
 }
 
 /* Main Container */
@@ -62,6 +65,14 @@ nav ul li a:hover {
     gap: 50px;
     flex-wrap: wrap; /* Ensures responsiveness */
     text-align: left;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 /* Text Content */
@@ -94,7 +105,7 @@ nav ul li a:hover {
 .cta-button {
     background: #ff6b81;
     color: white;
-    padding: 12px 20px;
+    padding: 12px 25px;
     font-size: 18px;
     border: none;
     border-radius: 30px;
@@ -102,11 +113,15 @@ nav ul li a:hover {
     transition: all 0.4s ease-in-out;
     display: inline-block;
     margin-top: 20px;
+    box-shadow: 0 0 10px rgba(255, 107, 129, 0.8);
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .cta-button:hover {
     background: #ff4757;
-    box-shadow: 0 0 15px rgba(255, 107, 129, 0.8);
+    box-shadow: 0 0 20px rgba(255, 107, 129, 1);
+    transform: scale(1.1);
 }
 
 /* Profile Image Animation */
@@ -117,19 +132,47 @@ nav ul li a:hover {
 }
 
 .image-content img {
-    width: 250px; /* Adjust size as needed */
-    border-radius: 10px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 260px;
+    border-radius: 20px;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    filter: brightness(0.95);
 }
 
 .image-content img:hover {
     transform: scale(1.1);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    filter: brightness(1);
 }
 
+/* Floating Image Animation */
+@keyframes floatImage {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.image-content img {
+    animation: floatImage 4s ease-in-out infinite;
+}
 
 /* Smooth Scroll Effect */
 html {
     scroll-behavior: smooth;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content {
+        max-width: 100%;
+    }
+
+    .image-content img {
+        width: 200px;
+    }
 }
