@@ -10,9 +10,23 @@
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
             text-align: center;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
         }
+        
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+            z-index: -1;
+        }
+        
         nav {
             background-color: #000;
             padding: 15px;
@@ -40,7 +54,7 @@
             width: 80%;
             margin: auto;
             padding: 20px;
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0.9);
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
             margin-top: 30px;
@@ -92,13 +106,24 @@
     <div class="container">
         <h1>About Me</h1>
         <h2>My Journey</h2>
-        <p>My fascination with technology started when I first wrote a simple C program. The thrill of making a machine do what I wanted sparked my curiosity, and ever since, I’ve been diving deeper into coding and problem-solving. Today, I’m working towards becoming a well-known software engineer, constantly learning and improving every step of the way.</p>
-
+        <p>My fascination with technology started when I first wrote a simple C program. The thrill of making a machine do what I wanted sparked my curiosity, and ever since, I’ve been diving deeper into coding and problem-solving. Currently, I am a <strong>Full Stack Java Developer Trainee at TAP Academy, Bengaluru</strong>, refining my backend and frontend development skills. I am also pursuing my <strong>B.Tech in Information Technology at Sri Ramakrishna Institute of Technology</strong>.</p>
+         
         <h2>Who Am I?</h2>
         <p>Currently, I’m pursuing my <strong>B.Tech in Information Technology</strong> at Sri Ramakrishna Institute of Technology. Alongside my studies, I’m also a <strong>Full Stack Java Developer Trainee</strong> at <strong>TAP Academy, Bengaluru</strong>, sharpening my skills in building robust and scalable applications.</p>
 
-        <h2>Why Java?</h2>
-        <p>Java has been my most loved and go-to language. From object-oriented programming to backend development, Java’s versatility never ceases to amaze me. Whether it’s designing efficient algorithms or creating seamless applications, Java always finds its way into my codebase!</p>
+        <h2>My Love for Java</h2>
+        <p>Java is my go-to language—it’s powerful, versatile, and the backbone of many applications. Whether it's backend development, object-oriented programming, or building full-stack applications, Java is my favorite tool to bring ideas to life.</p>
+
+        <h2>My Journey So Far 📅</h2>
+    <div class="timeline">
+        <ul>
+            <li><strong>2020:</strong> Wrote my first C program and fell in love with coding.</li>
+            <li><strong>2021:</strong> Joined B.Tech IT at Sri Ramakrishna Institute of Technology.</li>
+            <li><strong>2022:</strong> Started exploring my skills in java programming to solve real-world applications.</li>
+            <li><strong>2023:</strong> Worked on my final-year project: Crop Yield Prediction.</li>
+            <li><strong>2024:</strong> Training as a Full Stack Java Developer at TAP Academy and preparing to step into the tech industry!</li>
+        </ul>
+    </div>
 
         <h2>Did You Know?</h2>
         <ul>
@@ -108,30 +133,12 @@
             <li>🌱 I love exploring AI and data-driven solutions—my final-year project on crop yield prediction is a small step toward that goal!</li>
         </ul>
 
-        <h2>A Day in My Life</h2>
-        <p>🖥️ <strong>Coding & Debugging</strong> → 🎓 <strong>Learning new tech</strong> → 🎵 <strong>Music Break with A.R. Rahman</strong> → 🏐 <strong>Throwball practice or hanging out with friends</strong> → 🌙 <strong>Late-night tech research & Netflix</strong></p>
-
         <h2>My Motto</h2>
         <p><em>"Challenges are just puzzles waiting to be solved."</em></p>
-
-        <h2>What I'm Currently Learning</h2>
-        <p>Right now, I’m exploring <strong>machine learning techniques</strong> and improving my <strong>SQL skills</strong>. Excited about working on real-world projects!</p>
+        <p><em>"Every bug fixed is a step closer to mastery."</em></p>
     </div>
-
-    <!-- My Journey So Far -->
-    <div class="container">
-        <h2>My Journey So Far 📅</h2>
-        <ul>
-            <li><strong>2018:</strong> Wrote my first C program and fell in love with coding.</li>
-            <li><strong>2020:</strong> Joined B.Tech IT at Sri Ramakrishna Institute of Technology.</li>
-            <li><strong>2022:</strong> Started exploring ML and SQL for real-world applications.</li>
-            <li><strong>2023:</strong> Worked on my final-year project: Crop Yield Prediction.</li>
-            <li><strong>2024:</strong> Training as a Full Stack Java Developer at TAP Academy and preparing to step into the tech industry!</li>
-        </ul>
-    </div>
-
-    <!-- Bucket List -->
-    <div class="container">
+    
+     <div class="container">
         <h2>Bucket List ✅</h2>
         <ul>
             <li>🏆 Build a real-world ML-based application.</li>
