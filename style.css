@@ -10,7 +10,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 
 /* Sticky Navigation Bar */
@@ -54,20 +53,18 @@ nav ul li a:hover {
 /* Main Container */
 .container {
     display: flex;
-    justify-content: center; /* Center the content */
+    justify-content: space-between; /* Space between text and image */
     align-items: center;
     height: 100vh;
-    padding: 20px 80px; /* Adjusted padding for better spacing */
-    gap: 30px; /* Reduced gap between text and image */
+    padding: 50px 80px; /* Adjusted padding for better spacing */
     flex-wrap: wrap; /* Ensures responsiveness */
-    text-align: left;
 }
 
 /* Text Content */
 .text-content {
-    max-width: 650px; /* Increased text width slightly */
+    max-width: 50%; /* Adjust width to fit content properly */
     color: black;
-    text-align: justify; /* Justify alignment */
+    text-align: justify;
 }
 
 /* Introductory Heading */
@@ -100,17 +97,16 @@ nav ul li a:hover {
 
 /* Profile Image Placement */
 .image-content {
+    width: 40%; /* Adjust width for better alignment */
     display: flex;
-    justify-content: flex-start; /* Align slightly left */
+    justify-content: center;
     align-items: center;
-    width: 50%;
     position: relative;
-    right: 0;
-    padding-right: 30px; /* Reduced padding for better alignment */
 }
 
 .image-content img {
-    width: 350px; /* Adjust size as needed */
+    width: 100%; /* Ensure image adapts to container width */
+    max-width: 350px; /* Restrict maximum size */
     border-radius: 10px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -125,7 +121,7 @@ nav ul li a:hover {
 .image-overlay {
     position: absolute;
     bottom: 20px;
-    right: 20px; /* Adjusted for better positioning */
+    right: 20px;
     background: rgba(0, 100, 0, 0.8);
     color: white;
     padding: 10px 15px;
