@@ -6,7 +6,7 @@
 }
 
 body {
-    background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #ffdde1, #fbc2eb);
+    background: linear-gradient(-45deg, #000000, #006400); /* Black and Dark Green */
     background-size: 400% 400%;
     animation: gradientAnimation 15s ease infinite;
     font-family: Arial, sans-serif;
@@ -20,10 +20,11 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(0, 0, 0, 0.9);
     padding: 15px 0;
     text-align: center;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
 nav ul {
@@ -41,7 +42,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #32CD32; /* Green */
     font-weight: bold;
     font-size: 18px;
     transition: color 0.3s ease;
@@ -49,16 +50,16 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ff6b81;
+    color: #00FF00; /* Lighter Green */
 }
 
 /* Main Container */
 .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 100vh;
-    padding: 100px 20px;
+    padding: 50px 20px; /* Reduced space above */
     gap: 50px;
     flex-wrap: wrap; /* Ensures responsiveness */
     text-align: left;
@@ -67,32 +68,12 @@ nav ul li a:hover {
 /* Text Content */
 .text-content {
     max-width: 500px;
-}
-
-/* Typing Animation for Job Title */
-.typing {
-    font-size: 24px;
-    font-weight: bold;
-    color: #ff6b81;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 2px solid #ff6b81;
-    width: 0;
-    animation: typing 3s steps(30, end) forwards, blink 0.6s infinite;
-}
-
-@keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
-}
-
-@keyframes blink {
-    50% { border-color: transparent; }
+    color: white;
 }
 
 /* CTA Button Animation */
 .cta-button {
-    background: #ff6b81;
+    background: #32CD32; /* Green */
     color: white;
     padding: 12px 20px;
     font-size: 18px;
@@ -105,19 +86,23 @@ nav ul li a:hover {
 }
 
 .cta-button:hover {
-    background: #ff4757;
-    box-shadow: 0 0 15px rgba(255, 107, 129, 0.8);
+    background: #228B22; /* Darker Green */
+    box-shadow: 0 0 15px rgba(50, 205, 50, 0.8);
 }
 
-/* Profile Image Animation */
+/* Profile Image Placement */
 .image-content {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    height: 100vh;
 }
 
 .image-content img {
-    width: 250px; /* Adjust size as needed */
+    width: 350px; /* Adjust size as needed */
     border-radius: 10px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
