@@ -1,19 +1,17 @@
-/* Smooth Gradient Background Animation */
-@keyframes gradientAnimation {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+/* Smooth Fade-in Animation for a Professional Look */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
+/* General Styles */
 body {
-    background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #ffdde1, #fbc2eb);
-    background-size: 400% 400%;
-    animation: gradientAnimation 10s ease infinite;
+    background: #ffffff; /* Clean White Background */
     font-family: "Poppins", sans-serif;
+    color: #333;
     margin: 0;
     padding: 0;
     text-align: center;
-    color: #333;
 }
 
 /* Glassmorphism Sticky Navigation Bar */
@@ -21,12 +19,11 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
     padding: 15px 0;
     text-align: center;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    transition: background 0.3s ease-in-out;
 }
 
 nav ul {
@@ -44,18 +41,18 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
-    font-weight: bold;
+    color: #333;
+    font-weight: 600;
     font-size: 18px;
     transition: color 0.3s ease;
     padding: 10px;
 }
 
 nav ul li a:hover {
-    color: #ff4757;
+    color: #007bff; /* Professional Blue Hover Effect */
 }
 
-/* Main Container */
+/* Main Content Container */
 .container {
     display: flex;
     justify-content: center;
@@ -63,16 +60,10 @@ nav ul li a:hover {
     height: 100vh;
     padding: 100px 20px;
     gap: 50px;
-    flex-wrap: wrap; /* Ensures responsiveness */
+    flex-wrap: wrap;
     text-align: left;
     opacity: 0;
     animation: fadeIn 1.5s ease-in-out forwards;
-}
-
-/* Fade-in Animation */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
 }
 
 /* Text Content */
@@ -82,12 +73,12 @@ nav ul li a:hover {
 
 /* Typing Animation for Job Title */
 .typing {
-    font-size: 24px;
-    font-weight: bold;
-    color: #ff6b81;
+    font-size: 22px;
+    font-weight: 600;
+    color: #007bff;
     overflow: hidden;
     white-space: nowrap;
-    border-right: 2px solid #ff6b81;
+    border-right: 2px solid #007bff;
     width: 0;
     animation: typing 3s steps(30, end) forwards, blink 0.6s infinite;
 }
@@ -101,30 +92,29 @@ nav ul li a:hover {
     50% { border-color: transparent; }
 }
 
-/* CTA Button Animation */
+/* Call-to-Action (CTA) Button */
 .cta-button {
-    background: #ff6b81;
+    background: #007bff;
     color: white;
-    padding: 12px 25px;
+    padding: 12px 20px;
     font-size: 18px;
     border: none;
     border-radius: 30px;
     cursor: pointer;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.3s ease-in-out;
     display: inline-block;
     margin-top: 20px;
-    box-shadow: 0 0 10px rgba(255, 107, 129, 0.8);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 .cta-button:hover {
-    background: #ff4757;
-    box-shadow: 0 0 20px rgba(255, 107, 129, 1);
-    transform: scale(1.1);
+    background: #0056b3;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.4);
+    transform: scale(1.05);
 }
 
-/* Profile Image Animation */
+/* Profile Image Styling */
 .image-content {
     display: flex;
     justify-content: center;
@@ -133,27 +123,25 @@ nav ul li a:hover {
 
 .image-content img {
     width: 260px;
-    border-radius: 20px;
-    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    filter: brightness(0.95);
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .image-content img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-    filter: brightness(1);
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Floating Image Animation */
+/* Subtle Floating Image Animation */
 @keyframes floatImage {
     0% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+    50% { transform: translateY(-8px); }
     100% { transform: translateY(0); }
 }
 
 .image-content img {
-    animation: floatImage 4s ease-in-out infinite;
+    animation: floatImage 5s ease-in-out infinite;
 }
 
 /* Smooth Scroll Effect */
