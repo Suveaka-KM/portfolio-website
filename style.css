@@ -65,9 +65,18 @@ nav ul li a:hover {
 
 /* Text Content */
 .text-content {
-    max-width: 500px;
+    max-width: 600px; /* Increased text width */
     color: black;
-    text-align: justify;
+    text-align: justify; /* Justify alignment */
+}
+
+/* Introductory Heading */
+.text-content h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #006400;
 }
 
 /* CTA Button Animation */
@@ -98,6 +107,7 @@ nav ul li a:hover {
     position: relative;
     right: 0;
     padding-right: 50px; /* Adds appropriate spacing */
+    position: relative;
 }
 
 .image-content img {
@@ -111,6 +121,29 @@ nav ul li a:hover {
     transform: scale(1.1);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
+
+/* Profile Overlay with Name and Title */
+.image-overlay {
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+    background: rgba(0, 100, 0, 0.8);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Background Box for Profile Image */
+.image-container {
+    position: relative;
+    padding: 20px;
+    background: rgba(0, 100, 0, 0.1);
+    border-radius: 15px;
+    display: inline-block;
+} 
 
 /* Smooth Scroll Effect */
 html {
