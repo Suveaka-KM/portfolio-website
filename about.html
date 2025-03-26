@@ -17,7 +17,7 @@
     
     body::before {
         content: "";
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         width: 100%;
@@ -41,6 +41,8 @@
         margin: 0 15px;
     }
     nav ul li a {
+        display: inline-block;
+        padding: 5px 10px;
         color: white;
         text-decoration: none;
         font-size: 18px;
@@ -51,24 +53,24 @@
         text-decoration: underline;
     }
     .container {
-    width: 80%;
-    margin: auto;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    margin-top: 30px;
-    text-align: left;
+        width: 80%;
+        margin: auto;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.5);
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        margin-top: 30px;
+        text-align: left;
     }
     h1, h2 {
-    color: #222;
-    text-align: center;
+        color: #222;
+        text-align: center;
     }
     p, li {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #333; 
-    text-align: justify;
+        font-size: 18px;
+        line-height: 1.6;
+        color: #333; 
+        text-align: justify;
     }
     ul {
         list-style-type: disc;
@@ -79,14 +81,21 @@
         margin-bottom: 5px;
         color: #333;
     }
+    .timeline {
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+    }
     .fun-fact {
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 10px;
-    margin: 20px auto;
-    width: 80%;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 10px;
+        margin: 20px auto;
+        width: 80%;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
 </style>
 </head>
 <body>
@@ -107,23 +116,20 @@
         <h1>About Me</h1>
         <h2>My Journey</h2>
         <p>My fascination with technology started when I first wrote a simple C program. The thrill of making a machine do what I wanted sparked my curiosity, and ever since, I’ve been diving deeper into coding and problem-solving. Currently, I am a <strong>Full Stack Java Developer Trainee at TAP Academy, Bengaluru</strong>, refining my backend and frontend development skills. I am also pursuing my <strong>B.Tech in Information Technology at Sri Ramakrishna Institute of Technology</strong>.</p>
-         
-        <h2>Who Am I?</h2>
-        <p>Currently, I’m pursuing my <strong>B.Tech in Information Technology</strong> at Sri Ramakrishna Institute of Technology. Alongside my studies, I’m also a <strong>Full Stack Java Developer Trainee</strong> at <strong>TAP Academy, Bengaluru</strong>, sharpening my skills in building robust and scalable applications.</p>
 
         <h2>My Love for Java</h2>
         <p>Java is my go-to language—it’s powerful, versatile, and the backbone of many applications. Whether it's backend development, object-oriented programming, or building full-stack applications, Java is my favorite tool to bring ideas to life.</p>
 
         <h2>My Journey So Far 📅</h2>
-    <div class="timeline">
-        <ul>
-            <li><strong>2020:</strong> Wrote my first C program and fell in love with coding.</li>
-            <li><strong>2021:</strong> Joined B.Tech IT at Sri Ramakrishna Institute of Technology.</li>
-            <li><strong>2022:</strong> Started exploring my skills in java programming to solve real-world applications.</li>
-            <li><strong>2023:</strong> Worked on my final-year project: Crop Yield Prediction.</li>
-            <li><strong>2024:</strong> Training as a Full Stack Java Developer at TAP Academy and preparing to step into the tech industry!</li>
-        </ul>
-    </div>
+        <div class="timeline">
+            <ul>
+                <li><strong>2020:</strong> Wrote my first C program and fell in love with coding.</li>
+                <li><strong>2021:</strong> Joined B.Tech IT at Sri Ramakrishna Institute of Technology.</li>
+                <li><strong>2022:</strong> Started exploring my skills in Java programming to solve real-world applications.</li>
+                <li><strong>2024:</strong> Worked on my final-year project: Crop Yield Prediction.</li>
+                <li><strong>2025:</strong> Training as a Full Stack Java Developer at TAP Academy and preparing to step into the tech industry!</li>
+            </ul>
+        </div>
 
         <h2>Did You Know?</h2>
         <ul>
@@ -138,7 +144,8 @@
         <p><em>"Every bug fixed is a step closer to mastery."</em></p>
     </div>
     
-     <div class="container">
+    <!-- Bucket List -->
+    <div class="container">
         <h2>Bucket List ✅</h2>
         <ul>
             <li>🏆 Build a real-world ML-based application.</li>
