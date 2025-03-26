@@ -110,6 +110,12 @@ nav ul li a:hover {
 }
 
 /* Profile Image Animation */
+.image-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .image-content img {
     width: 250px;
     border-radius: 50%;
