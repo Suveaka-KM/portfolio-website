@@ -6,9 +6,7 @@
 }
 
 body {
-    background: linear-gradient(-45deg, #000000, #006400); /* Black and Dark Green */
-    background-size: 400% 400%;
-    animation: gradientAnimation 15s ease infinite;
+    background: #ffffff; /* White background */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -42,7 +40,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #32CD32; /* Green */
+    color: #006400; /* Dark Green */
     font-weight: bold;
     font-size: 18px;
     transition: color 0.3s ease;
@@ -50,7 +48,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #00FF00; /* Lighter Green */
+    color: #228B22; /* Lighter Green */
 }
 
 /* Main Container */
@@ -59,7 +57,7 @@ nav ul li a:hover {
     justify-content: space-between;
     align-items: center;
     height: 100vh;
-    padding: 50px 20px; /* Reduced space above */
+    padding: 20px 50px; /* Reduced space above */
     gap: 50px;
     flex-wrap: wrap; /* Ensures responsiveness */
     text-align: left;
@@ -68,12 +66,12 @@ nav ul li a:hover {
 /* Text Content */
 .text-content {
     max-width: 500px;
-    color: white;
+    color: black;
 }
 
 /* CTA Button Animation */
 .cta-button {
-    background: #32CD32; /* Green */
+    background: #006400; /* Dark Green */
     color: white;
     padding: 12px 20px;
     font-size: 18px;
@@ -86,8 +84,8 @@ nav ul li a:hover {
 }
 
 .cta-button:hover {
-    background: #228B22; /* Darker Green */
-    box-shadow: 0 0 15px rgba(50, 205, 50, 0.8);
+    background: #228B22; /* Lighter Green */
+    box-shadow: 0 0 15px rgba(0, 100, 0, 0.8);
 }
 
 /* Profile Image Placement */
@@ -96,9 +94,9 @@ nav ul li a:hover {
     justify-content: flex-end;
     align-items: center;
     width: 50%;
-    position: absolute;
+    position: relative;
     right: 0;
-    height: 100vh;
+    padding-right: 50px; /* Adds appropriate spacing */
 }
 
 .image-content img {
