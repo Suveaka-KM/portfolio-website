@@ -54,18 +54,18 @@ nav ul li a:hover {
 /* Main Container */
 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Center the content */
     align-items: center;
     height: 100vh;
-    padding: 20px 50px; /* Reduced space above */
-    gap: 50px;
+    padding: 20px 80px; /* Adjusted padding for better spacing */
+    gap: 30px; /* Reduced gap between text and image */
     flex-wrap: wrap; /* Ensures responsiveness */
     text-align: left;
 }
 
 /* Text Content */
 .text-content {
-    max-width: 600px; /* Increased text width */
+    max-width: 650px; /* Increased text width slightly */
     color: black;
     text-align: justify; /* Justify alignment */
 }
@@ -101,13 +101,12 @@ nav ul li a:hover {
 /* Profile Image Placement */
 .image-content {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start; /* Align slightly left */
     align-items: center;
     width: 50%;
     position: relative;
     right: 0;
-    padding-right: 50px; /* Adds appropriate spacing */
-    position: relative;
+    padding-right: 30px; /* Reduced padding for better alignment */
 }
 
 .image-content img {
@@ -126,7 +125,7 @@ nav ul li a:hover {
 .image-overlay {
     position: absolute;
     bottom: 20px;
-    right: 50px;
+    right: 20px; /* Adjusted for better positioning */
     background: rgba(0, 100, 0, 0.8);
     color: white;
     padding: 10px 15px;
